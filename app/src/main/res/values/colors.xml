@@ -1,0 +1,9 @@
+<resources>
+    <color name="ios_background">#F2F2F7</color>
+    <color name="ios_card_background">#FFFFFF</color>
+    <color name="ios_primary">#FF3B30</color>
+    <color name="ios_secondary_accent">#FF9500</color>
+    <color name="ios_text_primary">#000000</color>
+    <color name="ios_text_secondary">#8E8E93</color>
+    <color name="ios_divider">#C6C6C8</color>
+</resources>

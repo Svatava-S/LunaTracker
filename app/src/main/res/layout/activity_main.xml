@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ios_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cycle Tracker"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/ios_text_primary"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Designed for Tubzz • Irregular Track"
+            android:textSize="14sp"
+            android:textColor="@color/ios_text_secondary"
+            android:layout_marginBottom="24dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/ios_card_bg"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CURRENT STATUS"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/ios_text_secondary"/>
+
+            <TextView
+                android:id="@+id/tvStatusMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No cycle data logged yet"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/ios_primary"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tvStatusSub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Log the start date of her November cycle below to initialize tracking."
+                android:textSize="14sp"
+                android:textColor="@color/ios_text_secondary"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/ios_card_bg"
+            android:layout_marginBottom="16dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AVG. CYCLE"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/ios_text_secondary"/>
+                <TextView
+                    android:id="@+id/tvAvgCycle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-- Days"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/ios_text_primary"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TOTAL LOGS"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/ios_text_secondary"/>
+                <TextView
+                    android:id="@+id/tvTotalLogs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 entries"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/ios_text_primary"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/ios_card_bg"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Log Period Start Date"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/ios_text_primary"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/etDateInput"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/ios_card_bg"
+                android:hint="2026-11-01"
+                android:inputType="date"
+                android:textColor="@color/ios_text_primary"
+                android:textColorHint="@color/ios_text_secondary"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnSaveDate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Save Cycle Entry"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@drawable/ios_button_bg"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logged History"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/ios_text_primary"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvHistoryList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No previous entries recorded."
+            android:textSize="14sp"
+            android:textColor="@color/ios_text_secondary"
+            android:background="@drawable/ios_card_bg"/>
+
+    </LinearLayout>
+</ScrollView>
